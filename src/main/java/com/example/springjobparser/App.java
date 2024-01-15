@@ -45,6 +45,7 @@ public class App{
         for (Job job : currentJobs){
             if (!jobContains(storedJobs,job)){
                 newJobs.add(job);
+                storedJobs.add(job);
             }
         }
         return newJobs;
